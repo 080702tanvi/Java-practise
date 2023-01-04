@@ -69,3 +69,14 @@ public class basics{
         System.out.println("Hello world");
         counter++;
        } while(counter<=10);
+//Break statement 
+
+      for(int i=1;i<=5;i++){
+        if(i==3){
+            break;
+        }
+        System.out.println(i);
+      }
+      System.out.println("I am out of the loop");
+      
+ //     
