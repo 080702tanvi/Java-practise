@@ -63,3 +63,9 @@ public class basics{
         n=n/10;
        }
        System.out.println(rev);
+//Do while loop
+ int counter=1;
+       do{
+        System.out.println("Hello world");
+        counter++;
+       } while(counter<=10);
