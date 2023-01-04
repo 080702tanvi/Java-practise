@@ -98,7 +98,7 @@ for(int i=1;i<=5;i++){
         }
         System.out.println(i);
       }
-      System.out.println("I am out of the loop");
+     
       
 //   continue statement example display all numbers by user except multiples of 10
  Scanner sc = new Scanner(System.in);
