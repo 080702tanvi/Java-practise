@@ -143,3 +143,20 @@ public class basics{
         swap(a,b);
     }
 }
+
+//practise questions product of 2 numbers
+public class basics{
+    public static int multiply(int a,int b){
+        int product=a*b;
+        return product;
+    }
+    public static void main(String args[]){
+        int a=3;
+        int b=5;
+        int product=multiply(a,b);
+        System.out.println("The product is:"+product);
+        product=multiply(10,20);//no int for second time
+        System.out.println("The product is:"+product);//the new value can also be multiplied here
+    }
+}
+
