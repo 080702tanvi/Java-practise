@@ -1,0 +1,131 @@
+//function
+
+public class basics{
+    public static void printhelloworld(){
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+
+    }
+    public static void main(String args[]){
+     printhelloworld();//function call
+    }
+    
+}
+
+
+//function
+import java.util.*;
+public class basics{
+    public static void calculate(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:")
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+        int sum=a+b;
+        System.out.println("The sum is:"+sum); 
+    }
+    public static void main(String args[]){
+     calculate();
+    }
+    
+}
+
+
+
+
+import java.util.*;
+public class basics{
+    public static void calculate(int a,int b){
+       
+        int sum=a+b;
+        System.out.println("The sum is:"+sum); 
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+     calculate(int a,int b);
+    }
+    
+}
+//parameter
+import java.util.*;
+public class basics{
+    public static int calculate(int a,int b){
+       
+        int sum=a+b;
+       return sum;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+         int sum=calculate( a, b);
+     System.out.println("The sum is:"+sum);
+    }
+    
+}
+
+
+//Parameter syntax
+
+import java.util.*;
+public class basics{
+    public static int calculate(int a,int b){ //function returnn type change to int
+                                              //function return type is int here because integer valur sum is returned    
+       
+        int sum=a+b;
+       return sum; //returns sum to main function
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+         int sum=calculate( a, b); //return by this statement and stored with asignment statement in sum variable and then printed
+     System.out.println("The sum is:"+sum);
+    }
+    
+}
+
+
+//parameters vs arguments
+import java.util.*;
+public class basics{
+    public static int calculate(int a,int b){ //parameter in function definition are parameters and formal parameters
+       
+        int sum=a+b;
+       return sum; 
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+         int sum=calculate( a, b); //values in calling statement
+                                  //arguments or actual parameters    
+     System.out.println("The sum is:"+sum);
+    }
+//call by value swap
+public class basics{
+    public static void main(String args[]){
+        //swap means exchange of values 
+        int a=5;
+        int b=10;
+        int temp=a;
+        a=b;
+        b= temp;
+        System.out.println("value of a:"+a);
+        System.out.println("value of b:"+b);
+    }
+}
+
+//
