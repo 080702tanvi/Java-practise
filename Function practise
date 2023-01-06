@@ -1,0 +1,96 @@
+//number is prime or not
+import java.util.*;
+public class prime{
+    public static boolean isprime(int n){
+       boolean isprime=true;
+       for(int i =2;i<=n-1;i++){
+        if (n%2==0){
+            isprime=false;
+        }
+       }
+       return isprime;
+    }
+    public static void main(String args[]){
+        System.out.println(isprime(5));
+      
+    }
+}
+
+//other way
+import java.util.*;
+public class prime{
+    public static boolean isprime(int n){
+       boolean isprime=true;
+       for(int i =2;i<=n-1;i++){
+        if (n%2==0){
+           return false;
+        }
+       }
+       return true;
+    }
+    public static void main(String args[]){
+        System.out.println(isprime(5));
+      
+    }
+}
+//corner cases 
+import java.util.*;
+public class prime{
+    //only for n>=2
+    public static boolean isprime(int n){
+      //corner  case
+      //2
+      if(n==2){
+        return true;
+      }
+
+        
+       boolean isprime=true;
+       for(int i =2;i<=n-1;i++){
+        if (n%2==0){
+           return false;
+        }
+       }
+       return true;
+    }
+    
+ //optimised way import java.util.*;
+public class prime{
+   public static boolean isprime(int n) {
+    if(n==2){
+        return true;
+    }
+    for(int i=2;i<=Math.sqrt(n);i++){
+        if(n%i==0){
+         return false;       
+        }
+    }
+     return true;
+   }
+    public static void main(String args[]){
+        System.out.println(isprime(5));
+      
+    }
+}
+//prime in a rangeimport java.util.*;
+public class prime{
+   public static boolean isprime(int n) {
+    if(n==2){
+        return true;
+    }
+    for(int i=2;i<=Math.sqrt(n);i++){
+        if(n%i==0){
+         return false;       
+        }
+    }
+     return true;
+   }
+   public static void primeinrange(int n){
+    for(int i=2;i<=n;i++){//if true print i
+        if(isprime(i)){
+            System.out.print(i+" ");
+
+        }
+    } 
+
+ 
